@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assistant Professor | Atmospheric Science</title>
+    <title>Anderson-Frey Research Group | UW Atmospheric Sciences</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -14,10 +14,48 @@
         }
 
         header {
-            background-color: #008080;
+            position: relative;
+            height: 300px; /* Adjust the height based on your banner image */
+            overflow: hidden;
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.7; /* Adjust the transparency as needed */
+        }
+
+        header h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             color: #fff;
-            padding: 1em 0;
+            z-index: 1;
+        }
+
+        nav {
             text-align: center;
+            margin: 20px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        nav a {
+            margin: 0 10px;
+            color: #008080;
+            text-decoration: none;
+            font-weight: bold;
+            z-index: 1;
+        }
+
+        nav a:hover {
+            color: #004040;
         }
 
         section {
@@ -59,30 +97,14 @@
             width: 100%;
             bottom: 0;
         }
-
-        nav {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        nav a {
-            margin: 0 10px;
-            color: #008080;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #004040;
-        }
     </style>
 </head>
 <body>
 
     <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Evolution_of_a_Tornado.jpg/640px-Evolution_of_a_Tornado.jpg" alt="Evolution of a Tornado">
         <h1>Alexandra Anderson-Frey</h1>
     </header>
-
     <nav>
         <a href="#">Home</a>
         <a href="#">Research</a>
@@ -92,8 +114,6 @@
     </nav>
 
     <section>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Evolution_of_a_Tornado.jpg/640px-Evolution_of_a_Tornado.jpg" alt="Evolution of a Tornado">
-	<font size="8">Photo Credit: Jason Weingart, <a href="https://commons.wikimedia.org/w/index.php?search=tornado&title=Special:MediaSearch&go=Go&type=image">Wikimedia Commons</a></font>
         <h2>The Anderson-Frey Research Group</h2>
         <p>Studying convective storms at the boundaries to develop and refine tools, methods, and theories as those boundaries shift in a changing climate.</p>
     </section>
@@ -106,6 +126,7 @@
 
     <footer>
         &copy; 2024 Alexandra Anderson-Frey
+	Banner Image Photo Credit: Jason Weingart, <a href="https://commons.wikimedia.org/w/index.php?search=tornado&title=Special:MediaSearch&go=Go&type=image">Wikimedia Commons</a>.
     </footer>
 
 </body>
