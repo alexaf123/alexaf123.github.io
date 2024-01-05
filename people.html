@@ -81,11 +81,26 @@
             line-height: 1.6;
         }
 
-        img {
-            max-width: 100%;
+        .people-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .person {
+            width: 48%;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .person img {
+            width: 100%;
             height: auto;
             border-radius: 10px;
-            margin-bottom: 20px;
+        }
+
+        .person-info {
+            width: 48%;
         }
 
         footer {
